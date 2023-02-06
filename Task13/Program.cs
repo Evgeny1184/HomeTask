@@ -11,17 +11,9 @@ while(n < 100)
   n = Convert.ToInt32(Console.ReadLine());
 }
 
-if(n > 999)
+while(n > 1000) n /= 10;
 {
-  n = n / 10;
+  result = n % 10;  
 }
-result = n % 10;
 
-if(n > 9999)
-{
-  n = n / 100;
-  
-} 
-result = n % 10;
-Console.WriteLine(result);  
-
+Console.WriteLine(result);
